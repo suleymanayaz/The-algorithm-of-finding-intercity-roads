@@ -34,18 +34,18 @@ struct stack *stck;
 int entries = 30; // �nput
 struct sehirler topo[30] = // MAPS
     {
-        {'A', 'B'}, {'A', 'D'}, {'A', 'F'}, {'A', 'H'},{'A','Z'},
+        {'A', 'B'}, {'A', 'D'}, {'A', 'F'}, {'A', 'H'},
         {'B', 'C'}, {'B', 'R'}, {'B', 'J'}, {'B', 'I'},
 		{'C', 'R'}, {'C', 'Q'}, {'C', 'D'}, 
         {'D', 'P'}, {'D', 'Q'}, {'D', 'E'},
-        {'E', 'P'}, {'E', 'N'}, {'E', 'F'},{'E','Z'},
+        {'E', 'P'}, {'E', 'N'}, {'E', 'F'},
 		{'F', 'N'}, {'F', 'M'}, {'F', 'G'},
         {'G', 'M'}, {'G', 'L'}, {'G', 'H'},
         {'H', 'L'}, {'H', 'K'}, {'H', 'I'},
         {'I', 'K'}, {'I', 'J'}
        
     };
-char sourceNode = 'A' /* SourceNode */, destinationNode = 'Z';/* Destination Node */
+char sourceNode = 'G' /* SourceNode */, destinationNode = 'M';/* Destination Node */
 int reachTime; // WAYS
 
 int main(){
