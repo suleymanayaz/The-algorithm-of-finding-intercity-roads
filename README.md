@@ -1,6 +1,6 @@
 # The-algorithm-of-finding-intercity-roads
 
-![Banner image]()
+![Banner image](https://github.com/suleymanayaz/The-algorithm-of-finding-intercity-roads/blob/master/Cityies%20maps.PNG)
 
 
 **Intercity flights will be made on the map given above.**
@@ -13,4 +13,4 @@
 iii- The longest road or roads between the two cities should be listed.<br/>
  iv- Only the roads in which three neighboring cities are visited should be determined between the two cities.<br/>
 
-![Example_Output]() 
+![Example_Output](https://github.com/suleymanayaz/The-algorithm-of-finding-intercity-roads/blob/master/example_output.PNG) 
