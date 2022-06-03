@@ -2,14 +2,17 @@
 #include <stdbool.h>
 #include <string.h>
 #define maxN 90
-struct sehirler{ // Structure holding the start and end points
+
+struct citys{ // Structure holding the start and end points
     char node1;
     char node2;
 };
+
 struct  stack{  // Stack
     int sp;
     char node[maxN];
 };
+
 char Neighbour[255][255];
 char pathString[255]; 
 char longestWays[255][255];
@@ -17,11 +20,10 @@ void InterNode(char interN, struct stack *stck);
 void findNeighbour();
 void printNeighbour();
 void pop(struct stack *stck);
-// sa
 void printLongestPaths();
 void findLongestPaths();
 void push(struct stack *stck, char node);
-char otherNode(char targetNode, struct sehirler *lnkNode);
+char otherNode(char targetNode, struct citys *lnkNode);
 bool control(struct stack* stck, char sehir);
 void initStk(stck)
 struct stack *stck;
@@ -31,8 +33,8 @@ struct stack *stck;
         stck -> node[i] = ' ';
       stck -> sp = -1;
 }
-int entries = 30; // �nput
-struct sehirler topo[30] = // MAPS
+int entries = 30; // inputs
+struct citys topo[30] = // MAPS
     {
         {'A', 'B'}, {'A', 'D'}, {'A', 'F'}, {'A', 'H'},
         {'B', 'C'}, {'B', 'R'}, {'B', 'J'}, {'B', 'I'},
@@ -82,7 +84,7 @@ bool control(struct stack* stck, char sehir){
     }
     return rtun;
 }
-char otherNode(char targetNode, struct sehirler *lnkNode){
+char otherNode(char targetNode, struct citys *lnkNode){
     return (lnkNode -> node1 == targetNode) ? lnkNode -> node2 : lnkNode -> node1; //Is it the first node that tries to reach?
 }
 void findLongestPaths(){ 
